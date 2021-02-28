@@ -1,4 +1,4 @@
-.player-style{
+.player{
    display:flex;
    border-bottom: 1px solid lightgray;
    margin: 20px;
@@ -13,6 +13,10 @@
    height: auto;
    border-radius: 50%;
 }
-.player-info{
-   
+.Button{
+    background-color:aquamarine ;
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+    cursor: pointer;
 }

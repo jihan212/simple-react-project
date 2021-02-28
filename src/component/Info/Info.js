@@ -1,17 +1,19 @@
 import React from 'react';
 import './Info.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 
 const Info = (props) => {
-    console.log(props.information);
+    const {name,image,salary} = props.information;
     return (
-        <div className="player-style">
+        <div className="player">
             <div className="player-image">
-                <img src={props.information.image} alt=""/>
+                <img src={image} alt=""/>
             </div>
-            <div className="player-info">
-                <h4>Player Name: {props.information.name}</h4>
-                <h3>Salary: {props.information.salary}</h3>
-                <button>Buy</button>
+            <div>
+                <h4>Player Name: {name}</h4>
+                <h3>Salary: {salary}</h3>
+                <button onClick={()=> props.handleBuyPlayer(props.information)} className="Button"><FontAwesomeIcon icon={faFutbol} /> Buy</button>
             </div>
         </div>
     );
