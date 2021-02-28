@@ -10,7 +10,7 @@ const Cart = (props) => {
             <div className="player-info">
             <h1>Player added for your club: {cart.length}</h1>
             { cart.map (player=><h3>Name: {player.name}</h3>) }
-            { cart.map (player=><h3>Salary: {player.salary}</h3>) }
+            { cart.map (player=><h3>Salary: ${player.salary}</h3>) }
             </div>
             <br/>
             <div className="player-cost">
