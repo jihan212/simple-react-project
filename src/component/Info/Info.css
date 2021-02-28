@@ -1,0 +1,18 @@
+.player-style{
+   display:flex;
+   border-bottom: 1px solid lightgray;
+   margin: 20px;
+   padding:5px;
+}
+.player-image{
+    width: 30%;
+    margin-left: 150px;
+}
+.player-image img{
+   width: 100px;
+   height: auto;
+   border-radius: 50%;
+}
+.player-info{
+   
+}
